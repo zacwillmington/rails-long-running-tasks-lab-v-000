@@ -20,3 +20,5 @@ You will find a CSV of classic rock songs and artists in `db\songs.csv`. Use it 
    artist names. In an `songs_controller#upload` action, create `Song` and `Artist` records from the CSV and
 redirect to the songs index page.
 2. Make sure tests pass!
+
+**Note** We're editing an existing application with some intentionally passing tests.  
