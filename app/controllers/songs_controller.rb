@@ -41,17 +41,11 @@ class SongsController < ApplicationController
 
   def upload
       #Song Clean,ARTIST CLEAN,Release Year,COMBINED,First?,Year?,PlayCount,F*G
-<<<<<<< HEAD
-      binding.pry
       CSV.foreach(params[:songs].path, headers: true) do |song|
           binding.pry
-     song = Song.create(title: song[0])
-     binding.pry
-=======
-      CSV.foreach(params[:file].path, headers: true) do |song|
-     song = Song.create(title: song[0])
->>>>>>> 7bbc39e3d4ba2c52145664e40799fa9f175b4cf3
-     song.artist.build(name: song[1])
+          song = Song.create(title: song[0])
+          binding.pry
+          song.artist.build(name: song[1])
    end
    redirect_to root_path
 
