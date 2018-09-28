@@ -43,9 +43,9 @@ class SongsController < ApplicationController
       #Song Clean,ARTIST CLEAN,Release Year,COMBINED,First?,Year?,PlayCount,F*G
       CSV.foreach(params[:songs].path, headers: true) do |song|
           binding.pry
-          song = Song.create(title: song[0])
+          @song = Song.create(title: song[0])
           binding.pry
-          song.artist.build(name: song[1])
+          @song.artist_name = song[1]
     end
    redirect_to root_path
 
