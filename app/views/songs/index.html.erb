@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 <h1>Upload CSV of songs</h1>
     <%= form_tag songs_upload_path, multipart: true do %>
         <%= file_field_tag :songs %>
         <%= submit_tag "Upload Songs" %>
     <% end %>
+=======
+<h1>Upload CSV of songs</h1> 
+
+>>>>>>> 7bbc39e3d4ba2c52145664e40799fa9f175b4cf3
 <ul>
 <% @songs.each do |song| %>
   <li><%= display_artist(song) %> - <%= link_to song.title, song_path(song) %></li>

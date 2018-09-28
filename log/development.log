@@ -2161,6 +2161,7 @@ Completed 200 OK in 257ms (Views: 249.3ms | ActiveRecord: 3.9ms)
             WHERE name='index_songs_on_artist_id' AND type='index'
 [0m
   [1m[36mArtist Load (2.5ms)[0m  [1mSELECT "artists".* FROM "artists"[0m
+<<<<<<< HEAD
 
 
 Started GET "/" for 99.110.161.235 at 2018-09-27 23:33:25 +0000
@@ -2227,3 +2228,56 @@ NoMethodError (undefined method `build' for nil:NilClass):
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.2ms)
+=======
+>>>>>>> 7bbc39e3d4ba2c52145664e40799fa9f175b4cf3
+
+
+Started GET "/songs" for 99.110.161.235 at 2018-09-28 00:36:58 +0000
+Cannot render console from 99.110.161.235! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+SyntaxError (/home/zacwillmington/rails-long-running-tasks-lab-v-000/app/controllers/songs_controller.rb:44: syntax error, unexpected <<
+<<<<<<< HEAD
+  ^
+/home/zacwillmington/rails-long-running-tasks-lab-v-000/app/controllers/songs_controller.rb:50: syntax error, unexpected ===, expecting keyword_end
+=======
+   ^
+/home/zacwillmington/rails-long-running-tasks-lab-v-000/app/controllers/songs_controller.rb:53: syntax error, unexpected >>, expecting keyword_end
+>>>>>>> 7bbc39e3d4ba2c52145664e40799fa9f175b4cf3
+  ^
+/home/zacwillmington/rails-long-running-tasks-lab-v-000/app/controllers/songs_controller.rb:72: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/songs_controller.rb:44: syntax error, unexpected <<
+  app/controllers/songs_controller.rb:50: syntax error, unexpected ===, expecting keyword_end
+  app/controllers/songs_controller.rb:53: syntax error, unexpected >>, expecting keyword_end
+  app/controllers/songs_controller.rb:72: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (12.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (53.3ms)
+
+
+Started GET "/songs" for 99.110.161.235 at 2018-09-28 00:37:37 +0000
+Cannot render console from 99.110.161.235! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+SyntaxError (/home/zacwillmington/rails-long-running-tasks-lab-v-000/app/controllers/songs_controller.rb:44: syntax error, unexpected <<
+<<<<<<< HEAD
+  ^
+/home/zacwillmington/rails-long-running-tasks-lab-v-000/app/controllers/songs_controller.rb:50: syntax error, unexpected ===, expecting keyword_end
+=======
+   ^
+/home/zacwillmington/rails-long-running-tasks-lab-v-000/app/controllers/songs_controller.rb:53: syntax error, unexpected >>, expecting keyword_end
+>>>>>>> 7bbc39e3d4ba2c52145664e40799fa9f175b4cf3
+  ^
+/home/zacwillmington/rails-long-running-tasks-lab-v-000/app/controllers/songs_controller.rb:72: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/songs_controller.rb:44: syntax error, unexpected <<
+  app/controllers/songs_controller.rb:50: syntax error, unexpected ===, expecting keyword_end
+  app/controllers/songs_controller.rb:53: syntax error, unexpected >>, expecting keyword_end
+  app/controllers/songs_controller.rb:72: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.3ms)
