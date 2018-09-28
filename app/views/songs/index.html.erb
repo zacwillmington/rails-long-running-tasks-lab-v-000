@@ -1,6 +1,7 @@
+
 <h1>Upload CSV of songs</h1>
     <%= form_tag songs_upload_path, multipart: true do %>
-        <%= file_field_tag :songs %>
+        <%= file_field_tag :file %>
         <%= submit_tag "Upload Songs" %>
     <% end %>
 <ul>
