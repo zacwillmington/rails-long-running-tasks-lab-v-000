@@ -48,7 +48,7 @@ class SongsController < ApplicationController
           @song.artist_name = song[1]
           
     end
-   redirect_to root_path
+   redirect_to songs_path
 
   end
 
