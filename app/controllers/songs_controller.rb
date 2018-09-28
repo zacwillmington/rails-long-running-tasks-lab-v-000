@@ -46,7 +46,7 @@ class SongsController < ApplicationController
 
           @song = Song.create(title: song[0])
           @song.artist_name = song[1]
-          
+
     end
    redirect_to songs_path
 
