@@ -2304,3 +2304,12 @@ Completed 200 OK in 389ms (Views: 378.3ms | ActiveRecord: 2.8ms)
 
 Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 99.110.161.235 at 2018-09-28 00:40:19 +0000
 Cannot render console from 99.110.161.235! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/songs/upload" for 99.110.161.235 at 2018-09-28 00:40:57 +0000
+Cannot render console from 99.110.161.235! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SongsController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"D4VFY2IzmGwQ3vZKbAw1jq6zOZqHzMel3T63PL7/KqGR4uHYM/C9hlZKvOZ1O4lYyRqBh7KG64fK0sCxWGD45A==", "songs"=>#<ActionDispatch::Http::UploadedFile:0x007f45a64f3740 @tempfile=#<Tempfile:/tmp/RackMultipart20180928-858-k7z5rs.csv>, @original_filename="songs.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"songs\"; filename=\"songs.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"Upload Songs"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "Caught Up in You"], ["created_at", "2018-09-28 00:41:21.762518"], ["updated_at", "2018-09-28 00:41:21.762518"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
