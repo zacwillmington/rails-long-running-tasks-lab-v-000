@@ -46,7 +46,7 @@ class SongsController < ApplicationController
           song = Song.create(title: song[0])
           binding.pry
           song.artist.build(name: song[1])
-   end
+    end
    redirect_to root_path
 
   end
